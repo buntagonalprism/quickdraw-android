@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuickDraw</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="action_new">New</string>
+    <string name="action_open">Open</string>
+    <string name="action_export_bitmap">Export as Bitmap</string>
+    <string name="action_export_svg">Export as SVG</string>
+    <string name="action_save">Save</string>
+    <string name="action_debug_pts_output">Output Points</string>
+    <string name="action_show_points">Show Points</string>
+
+    <string name="dialog_prompt_filename">Filename</string>
+    <string name="dialog_file_chosen">File Selected:</string>
+
+</resources>

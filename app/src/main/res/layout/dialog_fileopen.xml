@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/filebrowser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="@string/dialog_prompt_filename"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/material_blue_grey_800"
+        android:textColor="@color/bright_foreground_inverse_material_light"
+        android:textSize="12sp"
+        android:text="@string/dialog_file_chosen"/>
+    <TextView
+        android:id="@+id/file_to_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:textSize="24sp"
+        android:text=""/>
+
+</LinearLayout>

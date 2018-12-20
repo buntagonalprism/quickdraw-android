@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin_small"
+    android:paddingRight="@dimen/activity_horizontal_margin_small"
+    android:paddingTop="@dimen/activity_vertical_margin_small"
+    android:paddingBottom="@dimen/activity_vertical_margin_small" tools:context=".MainActivity">
+
+    <com.example.android.quickdraw.DrawingCanvas
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/drawingCanvas"/>
+
+    <TextView
+        android:id="@+id/debug_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:text="Scale: 1.0, Location 0.0, 0.0"/>
+
+    <View style="@style/HorizontalDivider"/>
+    <View style="@style/HorizontalDivider"/>
+
+    <org.lucasr.twowayview.TwoWayView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/constraintBar"
+        style="@style/TwoWayView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="2dp"
+        android:drawSelectorOnTop="false"
+        tools:context=".MainActivity"
+        android:layout_above="@+id/toolBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View style="@style/HorizontalDivider"/>
+
+    <LinearLayout
+        android:id="@+id/toolBar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/colour_selector"
+            android:layout_weight="1"></Spinner>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/weight_selector"
+            android:layout_weight="1"></Spinner>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tool_selector"
+            android:layout_weight="1"></Spinner>
+
+    </LinearLayout>
+
+</LinearLayout>
+    <!-- Layout weight: declares the proportion in which child views should grow to fill remaining
+    space. By declaring them all with equal weight, they all grow to the same size to fill the
+    screen. -->

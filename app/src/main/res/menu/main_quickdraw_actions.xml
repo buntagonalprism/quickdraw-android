@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_new"
+        android:title="@string/action_new"/>
+    <item android:id="@+id/action_save"
+        android:title="@string/action_save"/>
+    <item android:id="@+id/action_open"
+        android:title="@string/action_open"/>
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"/>
+    <item android:id="@+id/action_output_points"
+        android:title="@string/action_debug_pts_output"/>
+    <item android:id="@+id/action_show_points"
+        android:title="@string/action_show_points"
+        android:checkable="true"
+        android:checked="false"/>
+    <item android:id="@+id/action_export_svg"
+        android:title="@string/action_export_svg"/>
+    <item android:id="@+id/action_export_bitmap"
+        android:title="@string/action_export_bitmap"/>
+</menu>
